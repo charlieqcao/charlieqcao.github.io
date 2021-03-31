@@ -5,9 +5,10 @@ body {
 .navbar-custom {
   position: fixed;
   background-color: #ffffff;
-  padding: 20px 10px;
   margin: 0;
+  padding: 20px 0;
   width: 100%;
+  overflow: hidden;
 }
 .navbar-custom ul {
   list-style-type: none;
@@ -16,6 +17,32 @@ body {
 }
 .navbar-custom li {
   display: inline-block;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+.navbar-custom a {
+  text-decoration: none;
+}
+.navbar-custom .icon {
+  display: none;
+}
+@media screen and (max-width: 600px){
+  .navbar-custom li:not(:first-child) {
+    display: none;
+  }
+  .navbar-custom li.icon {
+    display: block;
+    float: right;
+  }
+  .navbar-custom.responsive li {
+    display:block;
+    text-align:left;
+  }
+  .navbar-custom.responsive li.icon {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
 }
 /*intro*/
 .intro-container {
