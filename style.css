@@ -1,5 +1,16 @@
+/*overall*/
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
 body {
   margin: 0;
+  min-height: 100%
+}
+.container {
+  height: 100%;
+  padding: 100px 10px 10px;
+  box-sizing: border-box;
 }
 /*navbar*/
 .navbar-custom {
@@ -34,20 +45,17 @@ body {
     display: block;
     float: right;
   }
-  .navbar-custom.responsive li {
+  .responsive li {
     display:block;
     text-align:left;
   }
-  .navbar-custom.responsive li.icon {
+  .responsive li.icon {
     position: absolute;
     top: 20px;
     right: 0;
   }
 }
 /*intro*/
-.intro-container {
-  padding: 50px 10px 10px;
-}
 .intro-container img {
   float: right;
   height: 250px;
@@ -58,6 +66,9 @@ body {
   display: table;
 }
 /*about*/
+.about-container {
+  background-color: #dcdcdc;
+}
 .column {
   float: left;
   width: 50%;
@@ -85,7 +96,7 @@ body {
   float: left;
   width: 33%;
   height: 100px;
-  background-color: #c0c0c0;
+  background-color: #dcdcdc;
 }
 .project-item-even {
   float: left;
@@ -93,7 +104,15 @@ body {
   height: 100px;
   background-color: #ffffff;
 }
+/*Contacts*/
+.contact-container {
+  background-color: #dcdcdc;
+  height: 75%;
+}
 /*footer*/
+.footer-container {
+  height: 25%
+}
 .footer-link {
   float: right;
 }
@@ -101,4 +120,7 @@ footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+footer .copy-right {
+  margin-bottom: 0;
 }
