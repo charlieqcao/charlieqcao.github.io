@@ -22,6 +22,13 @@ body {
   align-items: center;
   padding: 16px 0;
 }
+.navbar-custom a {
+  text-decoration: none;
+  color: #000000;
+}
+.navbar-custom i:hover {
+  cursor: pointer;
+}
 .navbar-logo {
   font-size: 20px;
   padding: 0 16px;
@@ -73,51 +80,6 @@ body {
     display: none;
   }
 }
-/*
-.navbar-custom {
-  position: fixed;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 20px 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar-custom a {
-  text-decoration: none;
-}
-.navbar-logo {
-  padding: 0 16px;
-}
-.navbar-menu {
-}
-.navbar-menu ul {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-.navbar-menu li {
-  padding: 0 16px;
-}
-.navbar-icon {
-  display: none;
-}
-@media screen and (max-width: 600px){
-  .navbar-menu {
-    display: none;
-  }
-  .navbar-icon {
-    display: block;
-    float: right;
-    padding: 0 16px;
-  }
-  .responsive .navbar-menu {
-    display: block;
-    text-align: right;
-  }
-}
-*/
 /*intro*/
 .intro-container img {
   float: right;
